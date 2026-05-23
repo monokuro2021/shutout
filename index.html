@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHUT OUT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>SHUT OUT</h1>
+        <div id="game-layout">
+            <div id="red-player" class="player-info">
+                <div class="player-name" style="color: #ff4444;">赤プレイヤー</div>
+                <div class="player-blocks">配置可能ブロック数: <span id="red-blocks">1</span></div>
+                <div class="player-actions">
+                    <button id="red-move-btn" class="action-btn">①うごく</button>
+                    <button id="red-place-btn" class="action-btn">②うめる</button>
+                    <button id="red-create-btn" class="action-btn">③つくる</button>
+                </div>
+            </div>
+            <div id="board"></div>
+            <div id="blue-player" class="player-info">
+                <div class="player-name" style="color: #4444ff;">青プレイヤー</div>
+                <div class="player-blocks">配置可能ブロック数: <span id="blue-blocks">1</span></div>
+                <div class="player-actions">
+                    <button id="blue-move-btn" class="action-btn">①うごく</button>
+                    <button id="blue-place-btn" class="action-btn">②うめる</button>
+                    <button id="blue-create-btn" class="action-btn">③つくる</button>
+                </div>
+            </div>
+        </div>
+        <div id="current-player">現在のプレイヤー: <span id="player-color"></span></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
